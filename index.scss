@@ -1,0 +1,28 @@
+$btn-border-radius: 18px;
+$primary-bg-color:rgba(240, 86, 112, 1);
+$primary-color:white;
+$main-color:rgba(30, 149, 155, 1);
+$sizes: ("xs":320px, "sm":576px);
+
+button {
+   border-radius: $btn-border-radius;
+   background-color: $primary-bg-color;
+   border: none;
+   color: $primary-color;
+   text-decoration: none;
+}
+span {
+   color: #1e959b;
+   font-weight: bold;
+ }
+ @mixin color() {
+   @media screen and (min-width: 300px) {
+     color: green;
+   }
+   
+   @media screen and (min-width: 600px) {
+     color: red;
+   }
+ }
+ 
+ p { @include color; }

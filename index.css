@@ -1,0 +1,25 @@
+button {
+  border-radius: 18px;
+  background-color: #f05670;
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+span {
+  color: #1e959b;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 300px) {
+  p {
+    color: green;
+  }
+}
+@media screen and (min-width: 600px) {
+  p {
+    color: red;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
