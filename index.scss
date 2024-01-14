@@ -3,7 +3,11 @@ $primary-bg-color:rgba(240, 86, 112, 1);
 $primary-color:white;
 $main-color:rgba(30, 149, 155, 1);
 $sizes: ("xs":320px, "sm":576px);
-
+$main-margin-top: 20px;
+$card-spacer-y: 5px;
+.nav-bar {
+  margin-top: $main-margin-top;
+}
 button {
    border-radius: $btn-border-radius;
    background-color: $primary-bg-color;
@@ -15,14 +19,117 @@ span {
    color: #1e959b;
    font-weight: bold;
  }
- @mixin color() {
-   @media screen and (min-width: 300px) {
-     color: green;
-   }
-   
-   @media screen and (min-width: 600px) {
-     color: red;
-   }
+ 
+ .main-title {
+   height: 580px;
+ }
+ .logoTitle {
+   height: 70px;
+   background-color:$main-color;
+ }
+ .container_logoTitle {
+   height: 100%;
+ }
+ .productService {
+   margin-top: 60px;
  }
  
- p { @include color; }
+ .card-body {
+   border-radius: 25px;
+   background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+
+   box-sizing: border-box;
+   box-shadow: 0px -4px  5px  rgba(30, 149, 155, 0.5);
+   font-size: 15px;
+   transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+ }
+ 
+ 
+   .g-5, .gx-5 {
+    --bs-gutter-x: 20px;
+   }
+ @media only screen and (max-width: 1880px) and (min-width: 600px) {
+  .one {
+    background-image: none;
+    align-items: center;
+    display: flex;
+  }
+  .main-title {
+  align-items: center;
+  display: flex;
+  }
+  .mainText {
+    padding-top: 10px;
+  }
+  .slide {
+    display: none;
+  }
+  
+  
+}
+ @media only screen and (max-width: 600px) {
+  .one {
+    background-image: url(img/mainpicture_mini.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    height: 580px;
+  }
+  .title {
+    height: 100%;
+    margin-top: 20px;
+    
+  }
+  .blockBtn {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+  }
+  .col-12 {
+    height: 50%;
+  }
+  .new-progect {
+    padding: 15px;
+    margin-top: 45px;
+  }
+  h1 {
+    text-align: center;
+    color: $main-color;
+    letter-spacing: 2px;
+  }
+  p {
+    margin-top: 15px;
+  }
+  .col-xs-12 {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .logoTitle {
+    background-size: cover;
+    display: none;
+  }
+  .slide {
+    background-color:$main-color;
+    align-items: center;
+    height: 70px;
+  }
+  .wooter {
+    margin-top: 15px;
+  }
+  .smartbar {
+    margin-top: 6px;
+  }
+  .cabify {
+    margin-top: 2px;
+  }
+ }
+
+.productComand {
+  margin: 15px;
+}
+
